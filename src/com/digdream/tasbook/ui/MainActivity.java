@@ -1,5 +1,6 @@
-package com.digdream.tasbook;
+package com.digdream.tasbook.ui;
 
+import com.digdream.tasbook.R;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -48,7 +49,7 @@ public class MainActivity extends BaseActivity {
 				} else {
 					// 当前SD 卡不可用
 					new AlertDialog.Builder(
-							com.digdream.tasbook.MainActivity.this)
+							com.digdream.tasbook.ui.MainActivity.this)
 							.setCancelable(false)
 							.setTitle("温馨提示")
 							.setMessage("未发现SD卡，您确定要继续吗?")
@@ -67,7 +68,7 @@ public class MainActivity extends BaseActivity {
 												DialogInterface dialog,
 												int which) {
 											finish();
-											com.digdream.tasbook.MainActivity.this.stopService(getIntent());
+											com.digdream.tasbook.ui.MainActivity.this.stopService(getIntent());
 											System.exit(0);
 										}
 									}).show();
@@ -134,12 +135,12 @@ public class MainActivity extends BaseActivity {
 	}
 
 	public void isNetworkAlertDialog() {
-		if (isNetworkAvailable(com.digdream.tasbook.MainActivity.this) == true) {
+		if (isNetworkAvailable(com.digdream.tasbook.ui.MainActivity.this) == true) {
 			Toast.makeText(MainActivity.this, "存在网络", Toast.LENGTH_LONG).show();
 			//跳转Activity，判断是否第一次运行
 			isFirsted();
 		} else {
-			new AlertDialog.Builder(com.digdream.tasbook.MainActivity.this)
+			new AlertDialog.Builder(com.digdream.tasbook.ui.MainActivity.this)
 					.setCancelable(false)
 					.setTitle("温馨提示")
 					.setMessage("未发现网络，您确定要继续吗?")
@@ -154,7 +155,7 @@ public class MainActivity extends BaseActivity {
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog,
 										int which) {
-									startNetworkSettingActivity(com.digdream.tasbook.MainActivity.this);
+									startNetworkSettingActivity(com.digdream.tasbook.ui.MainActivity.this);
 								}
 							}).show();
 

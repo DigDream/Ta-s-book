@@ -1,4 +1,4 @@
-package com.digdream.tasbook;
+package com.digdream.tasbook.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
