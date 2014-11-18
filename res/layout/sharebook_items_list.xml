@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#a0a0a0" >
+
+    <RelativeLayout
+        android:id="@+id/booklist"
+        android:background="@drawable/sharebook_bg"
+        android:layout_margin="6dp"
+        android:padding="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <com.digdream.tasbook.view.TasbookTextView
+            android:id="@+id/tv_book_share_time"
+            android:textSize="11sp"
+            android:textColor="@color/darkblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_book_tag"
+            android:text="30分前" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_below="@+id/tv_book_tag"
+            android:layout_toLeftOf="@id/tv_book_share_time" />
+
+        <com.digdream.tasbook.view.TasbookTextView
+            android:id="@+id/tv_share_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_bookimage"
+            android:layout_marginLeft="3dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="独步清风"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_below="@+id/tv_book_tag"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/iv_like" />
+
+        <com.digdream.tasbook.view.TasbookTextView
+            android:id="@+id/tv_book_summary"
+            android:textColor="@color/new_glay"
+            android:layout_width="214dip"
+            android:layout_height="84dip"
+            android:layout_above="@+id/tv_book_tag"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_book_title"
+            android:layout_toRightOf="@id/iv_bookimage"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="《倘若我在彼岸》是作者在《在世界中心呼唤爱》后的首部爱情小说集。片山恭一，学生时代通读了包括夏目漱石和大江健三郎在内的日本近现代文学全集，同时读了从笛卡尔、莱布尼茨到结构主义的欧洲近现代哲学，也读了马克思。自二十二三岁开始创作小说，《气息》、《世界在你不知道的地方运转》、《别相信约翰·列侬》等均为他的代表作。" />
+
+        <com.digdream.tasbook.view.TasbookTextView
+            android:id="@+id/tv_book_title"
+            android:textColor="@color/greenLight"
+            android:layout_width="210dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/iv_bookimage"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Back track 5从入门到精通Back track 5从入门到精通Back track 5从入门到精通Back track 5从入门到精通Back track 5从入门到精通" />
+
+        <ImageView
+            android:id="@+id/iv_bookimage"
+            android:layout_width="85dip"
+            android:layout_height="125dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/book_image_test" />
+
+        
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_below="@+id/iv_bookimage"
+            android:layout_toRightOf="@id/tv_share_author" />
+
+        <com.digdream.tasbook.view.TasbookTextView
+            android:textColor="@color/saddlebrown"
+            android:id="@+id/tv_book_tag"
+            android:layout_width="148dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_bookimage"
+            android:layout_alignLeft="@id/tv_book_summary"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="黑客，linux" />
+    </RelativeLayout>
+
+</RelativeLayout>

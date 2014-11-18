@@ -1,0 +1,92 @@
+<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="#ffede0c8"
+	    >
+	    <include
+        android:id="@+id/actionbar_title"
+        android:layout_height="@dimen/action_bar_height"
+        layout="@layout/actionbar_titleback" />
+	    <TextView
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:id="@+id/t1"
+	        android:layout_below="@id/actionbar_title"
+	        android:text="@string/add_income_money"
+	        android:textColor="@color/tasbookDarkTextColour"
+	        android:textSize="18dp"
+	        />
+	    <EditText 
+	        android:layout_marginTop="5dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:layout_below="@id/t1"
+	        android:id="@+id/e1"
+	        android:background="@drawable/editview_style1"
+	        android:inputType="text"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/t2"
+	        android:layout_below="@id/e1"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/add_income_reason"
+	        android:textColor="@color/tasbookDarkTextColour"
+	        android:textSize="18dp"
+	        />
+	    <EditText 
+	        android:id="@+id/e2"
+	        android:layout_below="@id/t2"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/editview_style2"
+	        android:layout_width="match_parent"
+	       
+	        android:layout_height="30dp"
+	        android:gravity="top"
+	        android:minLines="5"
+	        android:inputType="text"
+	        />
+	    <TextView
+	        android:id="@+id/t3"
+	        android:layout_marginTop="5dp"
+	        android:layout_below="@id/e2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:textColor="@color/tasbookDarkTextColour"
+	        android:text="@string/add_income_text_left"
+	        android:textSize="16dp"
+	        />
+	    <TextView
+	        android:id="@+id/t4"
+	        android:layout_below="@id/t3"
+	        android:gravity="center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/submit_buttom_bg"
+	        android:textColor="@color/tasbookDarkTextColour"
+	        android:textSize="16dp"
+	        android:text="@string/add_income_text_submit" 
+	        />
+	    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+         android:layout_below="@id/t3"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="test" />
+
+    <ImageView
+        android:id="@+id/iv_result"
+         android:layout_below="@id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+	   	
+	</RelativeLayout>

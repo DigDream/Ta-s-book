@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffede0c8"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar_title"
+        android:layout_height="@dimen/action_bar_height"
+        layout="@layout/actionbar_titleback" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar_title"
+        android:text="@string/add_income_isbn"
+        android:textColor="@color/tasbookDarkTextColour"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editview_style1"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/mBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e1"
+        android:layout_marginTop="5dp"
+        android:text="@string/add_income_title"
+        android:textColor="@color/tasbookDarkTextColour"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mBookTitle"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editview_style2"
+        android:gravity="top"
+        android:inputType="text"
+        android:editable="false"
+        android:minLines="5"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mBookSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTitle"
+        android:layout_marginTop="5dp"
+        android:text="@string/add_income_summary"
+        android:textColor="@color/tasbookDarkTextColour"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editSummary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mBookSummary"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editview_style2"
+        android:gravity="top"
+        android:inputType="text"
+        android:editable="false"
+        android:minLines="5"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSummary"
+        android:background="@drawable/submit_buttom_bg"
+        android:gravity="center"
+        android:text="@string/add_income_text_submit"
+        android:textColor="@color/tasbookDarkTextColour"
+        android:textSize="16dp" />
+    <!-- <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e3"
+        android:layout_toRightOf="@id/t4"
+        android:background="@drawable/submit_buttom_bg"
+        android:gravity="center"
+        android:text="@string/add_income_text_submit"
+        android:textColor="@color/tasbookDarkTextColour"
+        android:textSize="16dp" /> -->
+
+</RelativeLayout>

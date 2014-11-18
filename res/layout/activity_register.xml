@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffede0c8"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/actionbar_title"
+        android:layout_height="@dimen/action_bar_height"
+        layout="@layout/actionbar_titleback" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/signup_screen_min_padding" >
+
+            <LinearLayout
+                android:id="@+id/signup_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <requestFocus />
+
+                <EditText
+                    android:id="@+id/signup_fullname_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20.0dip"
+                    android:hint="@string/fullname_hint"
+                    android:inputType="textPersonName" />
+
+               
+
+                <EditText
+                    android:id="@+id/signup_password_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/signup_password_confirm_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/comfirm_password_hint"
+                    android:inputType="textPassword" />
+                 <EditText
+                    android:id="@+id/signup_phone_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/phone_hint"
+                    android:inputType="number" />
+
+                <com.digdream.tasbook.view.TasbookButton
+                    android:id="@+id/signup_signup_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/create_account_button"
+                    android:gravity="center"
+                    android:onClick="signupButtonClicked"
+                    android:text="@string/sign_up"
+                    android:textColor="@drawable/create_account_button_text" />
+
+                <com.digdream.tasbook.view.TasbookTextView
+                    android:id="@+id/agreement_textview"
+                    style="@style/SmallTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:gravity="center"
+                    android:text="@string/agreement"
+                    android:textAlignment="center"
+                    android:textColor="@color/tasbookDarkTextColour"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

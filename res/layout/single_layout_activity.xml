@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/btn_state_title" />
+
+    <LinearLayout
+        android:id="@+id/flagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titile"
+        android:orientation="horizontal" 
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/canPullRefBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0.0dp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/canLoadMoreFlagBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0.0dp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/autoLoadMoreFlagBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0.0dp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/isMoveToFirstItemBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0.0dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mIsDoRefreshOnWindowFocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flagLayout"
+        android:padding="1dp"
+        android:textSize="16sp" />
+
+    <com.digdream.tasbook.view.SingleLayoutListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mIsDoRefreshOnWindowFocused"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="0dp" />
+
+</RelativeLayout>
